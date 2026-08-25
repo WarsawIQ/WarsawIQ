@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://warsawiq.com/sitemap.xml

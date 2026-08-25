@@ -1,0 +1,9 @@
+{
+  "name": "WarsawIQ",
+  "short_name": "WarsawIQ",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0b1216",
+  "theme_color": "#0b1216",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

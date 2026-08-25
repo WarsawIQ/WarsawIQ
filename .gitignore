@@ -1,0 +1,11 @@
+# Materiał źródłowy i robocze wersje, nie do publikacji
+_zrodla/
+*.psd
+*.ai
+
+# Szum systemowy
+.DS_Store
+Thumbs.db
+
+# Notatki narzędziowe
+docs/superpowers/
