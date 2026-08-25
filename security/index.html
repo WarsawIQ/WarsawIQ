@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security &amp; Compliance — WarsawIQ</title>
+<meta name="description" content="How WarsawIQ secures its own operations, and which frameworks we work in: ISO/IEC 27001:2022, SOC 2 and ISAE 3402, GDPR and the Swiss FADP, Cyber Essentials and IASME.">
+<link rel="canonical" href="https://warsawiq.com/security/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0d1218">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="WarsawIQ — home">
+      <img class="logo-light" src="/assets/img/logo-nav.webp" alt="WarsawIQ" width="160" height="127">
+      <img class="logo-dark" src="/assets/img/logo-nav-dark.webp" alt="" width="160" height="127" aria-hidden="true">
+    </a>
+    <ul>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#how">How we work</a></li>
+      <li><a href="/security/">Security &amp; Compliance</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main" class="wrap section">
+  <div class="prose">
+    <p class="eyebrow">Last updated 26 August 2026</p>
+    <h1>Security &amp; Compliance</h1>
+
+    <p class="lead">Most vendor security questionnaires ask the same forty questions. This page
+      answers them in advance, and says plainly where the honest answer is "not applicable" rather
+      than dressing it up.</p>
+
+    <h2>Frameworks we work in</h2>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Framework</th><th>What we do with it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ISO/IEC 27001:2022</strong></td>
+            <td>Gap analysis through to certification audit. Karol is a Lead Implementer certified
+              by BSI.</td>
+          </tr>
+          <tr>
+            <td><strong>SOC 2 · ISAE 3402</strong></td>
+            <td>Readiness for Type I and Type II: scoping the trust services criteria, closing
+              gaps, and standing beside you through the auditor's fieldwork.</td>
+          </tr>
+          <tr>
+            <td><strong>GDPR</strong></td>
+            <td>Records of processing, technical and organisational measures, DPIAs, breach
+              procedures. Outsourced Data Protection Officer.</td>
+          </tr>
+          <tr>
+            <td><strong>Swiss FADP</strong> (revised)</td>
+            <td>Data Protection Advisor, held simultaneously with the GDPR role — useful where
+              entities straddle the EU and Switzerland.</td>
+          </tr>
+          <tr>
+            <td><strong>Cyber Essentials · Cyber Essentials Plus · IASME Cyber Assurance</strong></td>
+            <td>Implemented end to end for a UK entity, including the assessed Plus tier.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How this website is built</h2>
+    <p>A consultancy that advises on security should be able to describe its own attack surface.
+      Ours is deliberately close to zero:</p>
+    <ul>
+      <li><strong>Static files only.</strong> No content management system, no administrative
+        panel, no database, no server-side code. There is no application layer to attack.</li>
+      <li><strong>No third-party requests.</strong> Fonts, images and video are served from this
+        domain. No CDN, no analytics, no tag manager, no embedded widgets.</li>
+      <li><strong>No cookies and no client-side storage.</strong> Nothing is written to your
+        browser, so there is nothing to consent to and nothing to leak.</li>
+      <li><strong>No forms.</strong> Nothing is submitted anywhere; the contact address is an
+        ordinary mail link.</li>
+      <li><strong>Version-controlled and public.</strong> Every change to this site is a commit in
+        a public repository, so its history is auditable by anyone.</li>
+    </ul>
+    <p>This is a deliberate change of posture. The previous site ran on WordPress and was
+      compromised in July 2026. The installation was current on the day of the attack, with a
+      stock theme and three plugins — keeping the software up to date, the defence users are told
+      to rely on, did not prevent it. The response was not to harden the same architecture but to
+      remove it. The underlying issue has been reported to the platform's security team; we will
+      describe it here once they have assessed it and any fix is available.</p>
+
+    <h2>Our own operations</h2>
+    <ul>
+      <li>Multi-factor authentication on every account that supports it.</li>
+      <li>Unique, randomly generated credentials per service, held in a password manager.</li>
+      <li>Client material kept only for as long as the engagement and the law require, then
+        deleted. We prefer to work in your systems rather than hold copies in ours.</li>
+      <li>Email on EU-hosted infrastructure with SPF and DMARC published.</li>
+      <li>Devices running current, supported operating systems with full-disk encryption.</li>
+    </ul>
+
+    <h2>Where the honest answer is "no"</h2>
+    <p>We are a small firm and will not pretend otherwise. WarsawIQ does not hold its own ISO/IEC
+      27001 certificate, does not operate a 24/7 security operations centre, and does not carry a
+      formal, independently audited control set of its own. What we bring is people who have built
+      and been audited on those things inside larger regulated businesses. If your procurement
+      process requires a certified supplier rather than a certified practitioner, say so early and
+      we will tell you straight away whether we can meet it.</p>
+
+    <h2>Reporting a security problem</h2>
+    <p>If you find a vulnerability in this site or in anything we have built for you, write to
+      <a href="mailto:karol.chlasta@warsawiq.com">karol.chlasta@warsawiq.com</a>. We will
+      acknowledge within two working days, keep you informed while we fix it, and credit you if
+      you would like to be named. We will not threaten anyone who reports a problem in good faith.</p>
+
+    <p><a class="back" href="/">← Back to the home page</a></p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 WarsawIQ Karol Chlasta</span>
+    <span><a href="/privacy/">Privacy</a> · <a href="/security/">Security &amp; Compliance</a></span>
+  </div>
+</footer>
+</body>
+</html>

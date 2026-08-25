@@ -170,13 +170,6 @@ a:hover { text-decoration-thickness: 2px; }
 .nav a { color: var(--ink-soft); text-decoration: none; font-size: var(--s--1); font-weight: 500; }
 .nav a:hover { color: var(--accent); }
 
-.theme-toggle {
-  font: inherit; font-size: var(--s--2); font-weight: 500;
-  background: transparent; color: var(--muted);
-  border: 1px solid var(--hair); border-radius: 3px;
-  padding: 0.3rem 0.7rem; cursor: pointer;
-}
-.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ---------- hero ---------- */
 
@@ -272,3 +265,26 @@ footer.site .wrap { padding-block: 1.6rem; display: flex; flex-wrap: wrap; gap: 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
+
+/* ---------- prose pages (privacy, security) ---------- */
+
+.prose { max-width: 44rem; }
+.prose h1 { font-size: var(--s-4); font-weight: 700; margin-bottom: 0.4rem; }
+.prose h2 {
+  font-size: var(--s-1); font-weight: 600; margin: 2.2rem 0 0.6rem;
+  padding-top: 1.4rem; border-top: 1px solid var(--hair);
+}
+.prose h2:first-of-type { border-top: 0; padding-top: 0; }
+.prose p { margin-bottom: 0.9rem; color: var(--ink-soft); }
+.prose ul { margin: 0 0 1rem; padding-left: 1.1rem; color: var(--ink-soft); }
+.prose li { margin-bottom: 0.4rem; }
+.prose li::marker { color: var(--accent); }
+.prose .lead {
+  font-size: var(--s-1); color: var(--ink); border-left: 3px solid var(--accent);
+  padding-left: 1rem; margin-bottom: 2rem;
+}
+.prose .back { display: inline-block; margin-top: 2.5rem; font-size: var(--s--1); }
+.prose table { border-collapse: collapse; width: 100%; margin-bottom: 1.2rem; font-size: var(--s--1); }
+.prose th, .prose td { text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--hair); vertical-align: top; }
+.prose th { font-family: var(--mono); font-size: var(--s--2); text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 500; }
+.tablewrap { overflow-x: auto; }
