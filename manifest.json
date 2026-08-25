@@ -3,7 +3,7 @@
   "short_name": "WarsawIQ",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#0b1216",
-  "theme_color": "#0b1216",
+  "background_color": "#0d1218",
+  "theme_color": "#0d1218",
   "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
 }

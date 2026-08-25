@@ -1,9 +1,8 @@
 /* WarsawIQ — warsawiq.com
-   Palette taken from WarsawIQ_Logo_Laptop.svg: slate #778899 for structure,
-   cyan #81ecec and mint #55efc4 as accents. Those two are screen-glow colours —
-   they carry on dark grounds and must be darkened to pass contrast on light ones.
-   Type: Barlow, a DIN-lineage grotesque matching the Bahnschrift wordmark.
-   Self-hosted fonts, no third-party requests. */
+   Palette shared with karol.chlasta.pl: navy #143a72 on white, lightened to
+   #86abe9 on dark. The two sites are deliberately one visual family.
+   Type: Barlow, a DIN-lineage grotesque matching the Bahnschrift wordmark in
+   the logo. Self-hosted fonts, no third-party requests. */
 
 /* ---------- fonts ---------- */
 
@@ -41,19 +40,18 @@
 /* ---------- tokens ---------- */
 
 :root {
-  --paper:   #f4f7f8;
+  --paper:   #ffffff;
   --surface: #ffffff;
-  --panel:   #eaeff2;
-  --ink:     #0f171c;
-  --ink-soft:#2c3b45;
-  --muted:   #55697a;
-  --hair:    #d8e1e6;
+  --panel:   #f3f6fa;
+  --ink:     #0d1420;
+  --ink-soft:#2b3648;
+  --muted:   #59647a;
+  --hair:    #e1e7ef;
 
-  --slate:   #778899;   /* brand: laptop body */
-  --cyan:    #81ecec;   /* brand: screen glow — fills only on light */
-  --mint:    #55efc4;   /* brand: secondary accent */
-  --accent:  #0c6d78;   /* darkened cyan, passes contrast on light */
-  --accent-weak: #e2f6f7;
+  --navy:    #143a72;
+  --gold:    #9c7222;
+  --accent:  #143a72;
+  --accent-weak: #e8eef8;
 
   --sans: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -70,40 +68,46 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper:   #0b1216;
-    --surface: #121c22;
-    --panel:   #17242c;
-    --ink:     #e4edf1;
-    --ink-soft:#c3d3da;
-    --muted:   #8ba0ad;
-    --hair:    #24343d;
-    --accent:  #81ecec;
-    --accent-weak: #102a2e;
+    --paper:   #0d1218;
+    --surface: #151d28;
+    --panel:   #151d28;
+    --ink:     #e6eaf1;
+    --ink-soft:#c2cbdb;
+    --muted:   #8593a8;
+    --hair:    #222c39;
+    --navy:    #86abe9;
+    --gold:    #d3a24a;
+    --accent:  #86abe9;
+    --accent-weak: #16233a;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper:   #0b1216;
-  --surface: #121c22;
-  --panel:   #17242c;
-  --ink:     #e4edf1;
-  --ink-soft:#c3d3da;
-  --muted:   #8ba0ad;
-  --hair:    #24343d;
-  --accent:  #81ecec;
-  --accent-weak: #102a2e;
+  --paper:   #0d1218;
+  --surface: #151d28;
+  --panel:   #151d28;
+  --ink:   #e6eaf1;
+  --ink-soft:#c2cbdb;
+  --muted:   #8593a8;
+  --hair:  #222c39;
+  --navy:  #86abe9;
+  --gold:  #d3a24a;
+  --accent:  #86abe9;
+  --accent-weak: #16233a;
   color-scheme: dark;
 }
 :root[data-theme="light"] {
-  --paper:   #f4f7f8;
+  --paper:   #ffffff;
   --surface: #ffffff;
-  --panel:   #eaeff2;
-  --ink:     #0f171c;
-  --ink-soft:#2c3b45;
-  --muted:   #55697a;
-  --hair:    #d8e1e6;
-  --accent:  #0c6d78;
-  --accent-weak: #e2f6f7;
+  --panel:   #f3f6fa;
+  --ink:     #0d1420;
+  --ink-soft:#2b3648;
+  --muted:   #59647a;
+  --hair:    #e1e7ef;
+  --navy:    #143a72;
+  --gold:    #9c7222;
+  --accent:  #143a72;
+  --accent-weak: #e8eef8;
   color-scheme: light;
 }
 
@@ -150,8 +154,8 @@ a:hover { text-decoration-thickness: 2px; }
 .nav { border-bottom: 1px solid var(--hair); background: var(--surface); }
 .nav .wrap { display: flex; align-items: center; gap: 1.25rem; min-height: 4rem; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: inherit; margin-right: auto; }
-.brand img { width: 2rem; height: 2rem; object-fit: contain; }
-.brand b { font-weight: 700; font-size: var(--s-1); letter-spacing: -0.02em; }
+.brand img { height: 2.6rem; width: auto; object-fit: contain; }
+
 .nav ul { display: flex; gap: 1.1rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .nav a { color: var(--ink-soft); text-decoration: none; font-size: var(--s--1); font-weight: 500; }
 .nav a:hover { color: var(--accent); }
@@ -174,25 +178,25 @@ a:hover { text-decoration-thickness: 2px; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(105deg,
-    rgb(11 18 22 / 0.94) 0%, rgb(11 18 22 / 0.86) 42%, rgb(11 18 22 / 0.55) 100%);
+    rgb(13 20 32 / 0.94) 0%, rgb(13 20 32 / 0.86) 42%, rgb(13 20 32 / 0.55) 100%);
 }
 .hero .wrap { position: relative; z-index: 2; padding-block: clamp(4rem, 12vw, 7.5rem); }
 .hero-inner { max-width: 40rem; }
-.hero .eyebrow { color: var(--cyan); }
+.hero .eyebrow { color: #9dbdf0; }
 .hero h1 {
   font-size: clamp(2.1rem, 6vw, 3.4rem); font-weight: 700; color: #ffffff;
   margin-bottom: 1.1rem;
 }
-.hero h1 em { font-style: normal; color: var(--cyan); }
+.hero h1 em { font-style: normal; color: #9dbdf0; }
 .hero p { color: #cfdde3; font-size: var(--s-1); max-width: 34rem; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
 .btn {
   display: inline-block; text-decoration: none; font-weight: 600; font-size: var(--s--1);
   padding: 0.65rem 1.25rem; border-radius: 3px;
-  background: var(--cyan); color: #08272b; border: 1px solid var(--cyan);
+  background: var(--navy); color: #ffffff; border: 1px solid var(--navy);
 }
-.btn:hover { background: var(--mint); border-color: var(--mint); }
+.btn:hover { background: #1b4a8f; border-color: #1b4a8f; }
 .btn--ghost { background: transparent; color: #ffffff; border-color: rgb(255 255 255 / 0.4); }
 .btn--ghost:hover { background: rgb(255 255 255 / 0.1); border-color: #ffffff; }
 
@@ -213,7 +217,7 @@ a:hover { text-decoration-thickness: 2px; }
 .card {
   background: var(--surface); border: 1px solid var(--hair);
   border-radius: 5px; padding: 1.5rem;
-  border-top: 3px solid var(--slate);
+  border-top: 3px solid var(--navy);
 }
 .card h3 { font-size: var(--s-1); font-weight: 600; margin-bottom: 0.55rem; }
 .card p { color: var(--muted); font-size: var(--s--1); }
@@ -235,6 +239,10 @@ a:hover { text-decoration-thickness: 2px; }
   margin-bottom: 0.8rem; border: 2px solid var(--hair);
 }
 .person h3 { font-size: var(--s-0); font-weight: 600; margin-bottom: 0.1rem; }
+.person .degree {
+  display: block; font-family: var(--mono); font-size: var(--s--2);
+  color: var(--muted); margin-bottom: 0.15rem;
+}
 .person .role { font-family: var(--mono); font-size: var(--s--2); color: var(--accent); display: block; margin-bottom: 0.5rem; }
 .person p { font-size: var(--s--1); color: var(--muted); }
 
