@@ -81,6 +81,8 @@
     --accent-weak: #16233a;
     color-scheme: dark;
   }
+  :root:not([data-theme="light"]) .brand .logo-light { display: none; }
+  :root:not([data-theme="light"]) .brand .logo-dark  { display: block; }
 }
 :root[data-theme="dark"] {
   --paper:   #0d1218;
@@ -96,6 +98,8 @@
   --accent-weak: #16233a;
   color-scheme: dark;
 }
+:root[data-theme="dark"] .brand .logo-light { display: none; }
+:root[data-theme="dark"] .brand .logo-dark  { display: block; }
 :root[data-theme="light"] {
   --paper:   #ffffff;
   --surface: #ffffff;
@@ -110,6 +114,8 @@
   --accent-weak: #e8eef8;
   color-scheme: light;
 }
+:root[data-theme="light"] .brand .logo-light { display: block; }
+:root[data-theme="light"] .brand .logo-dark  { display: none; }
 
 /* ---------- base ---------- */
 
@@ -155,6 +161,10 @@ a:hover { text-decoration-thickness: 2px; }
 .nav .wrap { display: flex; align-items: center; gap: 1.25rem; min-height: 4rem; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: inherit; margin-right: auto; }
 .brand img { height: 2.6rem; width: auto; object-fit: contain; }
+/* The wordmark inside the logo is black, so it needs a light-on-dark twin.
+   Switched the same three ways as the colour tokens, so the manual toggle
+   works as well as the OS preference. */
+.brand .logo-dark { display: none; }
 
 .nav ul { display: flex; gap: 1.1rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .nav a { color: var(--ink-soft); text-decoration: none; font-size: var(--s--1); font-weight: 500; }
