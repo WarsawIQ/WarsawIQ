@@ -281,9 +281,9 @@ a:hover { text-decoration-thickness: 2px; }
 .person h3 { font-size: var(--s-0); font-weight: 600; margin-bottom: 0.1rem; }
 .person .degree {
   display: block; font-family: var(--mono); font-size: var(--s--2);
-  color: var(--muted); margin-bottom: 0.15rem;
+  color: var(--muted);
 }
-.person .role { font-family: var(--mono); font-size: var(--s--2); color: var(--accent); display: block; margin-bottom: 0.5rem; }
+.person .role { font-family: var(--mono); font-size: var(--s--2); color: var(--accent); display: block; margin-bottom: 0.15rem; }
 
 .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin: 0; }
 .contact dt { font-weight: 600; margin-bottom: 0.2rem; }
