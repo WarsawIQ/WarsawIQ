@@ -22,9 +22,9 @@
     </a>
     <ul>
       <li><a href="/#services">Services</a></li>
-      <li><a href="/admincloud/" aria-current="page">AdminCloud</a></li>
       <li><a href="/#how">How we work</a></li>
       <li><a href="/#research">Research</a></li>
+      <li><a href="/admincloud/" aria-current="page">AdminCloud</a></li>
       <li><a href="/#team">Team</a></li>
       <li><a href="/#contact">Contact</a></li>
     </ul>
@@ -39,21 +39,21 @@
     <p class="lead">Small property management offices still run on binders: rent annexes
       calculated by hand, bank statements in folders, inspection protocols signed on paper and
       posted by registered mail. AdminCloud turns that archive into a ledger of buildings, units,
-      tenants, rates and charges — and keeps it for the monthly billing that follows.</p>
+      tenants, rates and charges, and keeps it for the monthly billing that follows.</p>
 
     <h2>How it works</h2>
     <ul>
       <li><strong>Photograph the archive.</strong> A phone is enough. Every page is fingerprinted
         and deduplicated, so the same page never enters twice.</li>
-      <li><strong>A vision model reads it.</strong> Each page is classified — lease annex, bank
-        statement, invoice, gas inspection protocol — and its fields are extracted against a
+      <li><strong>A vision model reads it.</strong> Each page is classified (lease annex, bank
+        statement, invoice, gas inspection protocol) and its fields are extracted against a
         schema for that document type. One photograph may carry several documents; the model is
         built for that.</li>
       <li><strong>Arithmetic decides what a person checks.</strong> Documents check themselves:
         line items must add up to the total, the amount in words must match the amount in
         figures, tax and bank account numbers carry checksums. A document that passes every check
         goes straight in. One that fails goes to a review queue, with the suspect field already
-        marked — because we know which equation did not balance.</li>
+        marked, because we know which equation did not balance.</li>
       <li><strong>Corrections are never overwritten.</strong> Extraction writes facts, not
         records. Improve the model, re-run the archive, and compare the result with what a person
         has already accepted.</li>
@@ -61,7 +61,7 @@
 
     <h2>Built for money that belongs to someone else</h2>
     <ul>
-      <li><strong>Every amount has an audit trail</strong> — who changed it, when, and from what
+      <li><strong>Every amount has an audit trail:</strong> who changed it, when, and from what
         to what.</li>
       <li><strong>Rates carry validity periods and sources</strong>, so a retroactive adjustment
         can be reproduced years later.</li>
@@ -81,7 +81,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Archive pages ingested — one office, one year</td>
+            <td>Archive pages ingested (one office, one year)</td>
             <td><strong>1,210</strong></td>
           </tr>
           <tr>
@@ -100,7 +100,7 @@
     <p>The pilot runs on hardware we control, with the heavy one-off reading of the archive
       done on a university GPU cluster. The application is containerised and moves between
       environments without code changes. The next step, as more offices join, is hosting in
-      EU cloud regions — personal data of tenants stays in the European Economic Area, under a
+      EU cloud regions. Personal data of tenants stays in the European Economic Area, under a
       data processing agreement with each office.</p>
 
     <h2>What it does not do yet</h2>
@@ -108,11 +108,11 @@
       pretend it is further along. The archive is in; the review queue and the first registers
       of buildings, tenants and rates work. Automated monthly billing, bank statement matching
       and correspondence are on the roadmap, built in that order. How accurately the model reads
-      handwritten Polish notes is still being measured against a hand-labelled sample — we will
+      handwritten Polish notes is still being measured against a hand-labelled sample. We will
       publish the figure when we have it, not before.</p>
 
     <h2>Interested?</h2>
-    <p>If you run a property management office — or a handful of buildings — and the archive is
+    <p>If you run a property management office (or a handful of buildings) and the archive is
       still on paper, write to
       <a href="mailto:karol.chlasta@warsawiq.com">karol.chlasta@warsawiq.com</a>.</p>
 
@@ -123,7 +123,7 @@
 <footer class="site">
   <div class="wrap">
     <span>© 2026 WarsawIQ Karol Chlasta</span>
-    <span><a href="/admincloud/">AdminCloud</a> · <a href="/privacy/">Privacy</a> · <a href="/security/">Security &amp; Compliance</a></span>
+    <span><a href="/privacy/">Privacy</a> · <a href="/security/">Security &amp; Compliance</a></span>
   </div>
 </footer>
 </body>
