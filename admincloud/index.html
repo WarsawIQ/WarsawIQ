@@ -36,48 +36,22 @@
     <p class="eyebrow">Product · in pilot</p>
     <h1>AdminCloud</h1>
 
-    <p class="lead">Small property management offices still run on binders: rent annexes
-      calculated by hand, bank statements in folders, inspection protocols signed on paper and
-      posted by registered mail. AdminCloud turns that archive into a ledger of buildings, units,
-      tenants, rates and charges, and keeps it for the monthly billing that follows.</p>
+    <p class="lead">Property management offices still run on binders. AdminCloud turns a paper
+      archive into a working ledger of buildings, tenants, rates and charges.</p>
 
-    <h2>How it works</h2>
     <ul>
-      <li><strong>Photograph the archive.</strong> A phone is enough. Every page is fingerprinted
-        and deduplicated, so the same page never enters twice.</li>
-      <li><strong>A vision model reads it.</strong> Each page is classified (lease annex, bank
-        statement, invoice, gas inspection protocol) and its fields are extracted against a
-        schema for that document type. One photograph may carry several documents; the model is
-        built for that.</li>
-      <li><strong>Arithmetic decides what a person checks.</strong> Documents check themselves:
-        line items must add up to the total, the amount in words must match the amount in
-        figures, tax and bank account numbers carry checksums. A document that passes every check
-        goes straight in. One that fails goes to a review queue, with the suspect field already
-        marked, because we know which equation did not balance.</li>
-      <li><strong>Corrections are never overwritten.</strong> Extraction writes facts, not
-        records. Improve the model, re-run the archive, and compare the result with what a person
-        has already accepted.</li>
+      <li><strong>Photograph the archive.</strong> A vision model reads and classifies every
+        page.</li>
+      <li><strong>Arithmetic checks the model.</strong> Totals, amounts in words and account
+        numbers are verified, so a person only reviews what does not add up.</li>
+      <li><strong>Built for other people's money.</strong> Every amount has an audit trail, and
+        each office's data is kept apart.</li>
     </ul>
 
-    <h2>Built for money that belongs to someone else</h2>
-    <ul>
-      <li><strong>Every amount has an audit trail:</strong> who changed it, when, and from what
-        to what.</li>
-      <li><strong>Rates carry validity periods and sources</strong>, so a retroactive adjustment
-        can be reproduced years later.</li>
-      <li><strong>Several offices, one system, no mixing.</strong> Every record carries the
-        identifier of the office it belongs to, from the very first database migration, and an
-        automated test rejects any data structure that lacks it.</li>
-      <li><strong>Deletion you can check.</strong> When document scans are sent to a GPU node
-        for reading, they live only in memory, never on its disk, and each run leaves a
-        machine-generated proof of deletion.</li>
-    </ul>
-
-    <h2>From the pilot</h2>
     <div class="tablewrap">
       <table>
         <thead>
-          <tr><th>Measured</th><th>Result</th></tr>
+          <tr><th>From the pilot</th><th>Result</th></tr>
         </thead>
         <tbody>
           <tr>
@@ -85,35 +59,19 @@
             <td><strong>1,210</strong></td>
           </tr>
           <tr>
-            <td>Vision model time per page, NVIDIA A100</td>
-            <td><strong>1.0 s</strong></td>
+            <td>GPU reading sessions ending in a verified proof of deletion</td>
+            <td><strong>890 of 890</strong></td>
           </tr>
           <tr>
-            <td>Same model, quantised, on a laptop's integrated GPU</td>
-            <td>21.6 s</td>
+            <td>Server running the pilot</td>
+            <td>Raspberry Pi 4, 8 GB</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <h2>Where it runs</h2>
-    <p>The pilot runs on hardware we control, with the heavy one-off reading of the archive
-      done on a university GPU cluster. The application is containerised and moves between
-      environments without code changes. The next step, as more offices join, is hosting in
-      EU cloud regions. Personal data of tenants stays in the European Economic Area, under a
-      data processing agreement with each office.</p>
-
-    <h2>What it does not do yet</h2>
-    <p>AdminCloud is in pilot with one property management office in Poland, and we will not
-      pretend it is further along. The archive is in; the review queue and the first registers
-      of buildings, tenants and rates work. Automated monthly billing, bank statement matching
-      and correspondence are on the roadmap, built in that order. How accurately the model reads
-      handwritten Polish notes is still being measured against a hand-labelled sample. We will
-      publish the figure when we have it, not before.</p>
-
-    <h2>Interested?</h2>
-    <p>If you run a property management office (or a handful of buildings) and the archive is
-      still on paper, write to
+    <p>Now in pilot with one office in Poland. Next: more offices, hosted in EU cloud regions.
+      Run a property management office with the archive still on paper? Write to
       <a href="mailto:karol.chlasta@warsawiq.com">karol.chlasta@warsawiq.com</a>.</p>
 
     <p><a class="back" href="/">← Back to the home page</a></p>
