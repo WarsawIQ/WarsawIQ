@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://warsawiq.com/</loc><lastmod>2026-08-26</lastmod><priority>1.0</priority></url>
-  <url><loc>https://warsawiq.com/admincloud/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-  <url><loc>https://warsawiq.com/security/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
-  <url><loc>https://warsawiq.com/privacy/</loc><lastmod>2026-08-26</lastmod><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://warsawiq.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/admincloud/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/admincloud/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/security/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/security/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/bezpieczenstwo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/securite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/security/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/prywatnosc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/privacy/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/pl/admincloud/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/admincloud/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/pl/bezpieczenstwo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/security/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/bezpieczenstwo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/securite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/security/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/pl/prywatnosc/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/prywatnosc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/privacy/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/fr/admincloud/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/admincloud/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/admincloud/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/fr/securite/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/security/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/bezpieczenstwo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/securite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/security/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://warsawiq.com/fr/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warsawiq.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://warsawiq.com/pl/prywatnosc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://warsawiq.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warsawiq.com/privacy/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>

@@ -52,6 +52,7 @@
   --gold:    #9c7222;
   --accent:  #143a72;
   --accent-weak: #e8eef8;
+  --flagline: rgba(13, 20, 32, 0.2);
 
   --sans: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -79,6 +80,7 @@
     --gold:    #d3a24a;
     --accent:  #86abe9;
     --accent-weak: #16233a;
+    --flagline: rgba(230, 234, 241, 0.3);
     color-scheme: dark;
   }
   :root:not([data-theme="light"]) .brand .logo-light { display: none; }
@@ -96,6 +98,7 @@
   --gold:  #d3a24a;
   --accent:  #86abe9;
   --accent-weak: #16233a;
+  --flagline: rgba(230, 234, 241, 0.3);
   color-scheme: dark;
 }
 :root[data-theme="dark"] .brand .logo-light { display: none; }
@@ -112,6 +115,7 @@
   --gold:    #9c7222;
   --accent:  #143a72;
   --accent-weak: #e8eef8;
+  --flagline: rgba(13, 20, 32, 0.2);
   color-scheme: light;
 }
 :root[data-theme="light"] .brand .logo-light { display: block; }
@@ -169,6 +173,41 @@ a:hover { text-decoration-thickness: 2px; }
 .nav ul { display: flex; gap: 1.1rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .nav a { color: var(--ink-soft); text-decoration: none; font-size: var(--s--1); font-weight: 500; }
 .nav a:hover { color: var(--accent); }
+
+/* ---------- language switcher ---------- */
+
+/* Three plain links. No JavaScript: the language lives in the URL, so the
+   control works with scripting off and is followed by search engines. */
+.lang { display: flex; align-items: center; gap: 0.1rem; }
+.nav .lang a {
+  display: flex; align-items: center; justify-content: center;
+  /* 1.75rem = 28px. WCAG 2.2 SC 2.5.8 asks for 24px; the flag itself is
+     21 x 15, which would be an unreachable target on a phone. */
+  min-width: 1.75rem; min-height: 1.75rem;
+  border-radius: 0.3rem; opacity: 0.5; transition: opacity 140ms ease;
+}
+.nav .lang a:hover, .nav .lang a:focus-visible, .nav .lang a[aria-current="true"] { opacity: 1; }
+.lang .flag {
+  display: block; width: 1.3125rem; height: 0.9375rem; border-radius: 0.1rem;
+  /* Without this the white half of the Polish flag vanishes on the light
+     nav bar, and the navy of the Union Jack vanishes on the dark one. */
+  outline: 1px solid var(--flagline); outline-offset: -1px;
+}
+/* The inner ring is surface-coloured, so the marker reads on both themes. */
+.lang a[aria-current="true"] .flag { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--navy); }
+
+/* Once the menu no longer fits beside the logo, give it a row of its own so
+   the flags stay up beside the logo instead of trailing under the menu. */
+@media (max-width: 48rem) {
+  .nav ul { order: 1; flex-basis: 100%; }
+}
+
+/* Visible only to a screen reader. Unlike .skip this never returns on
+   focus — the language names are permanent alternative text. */
+.sr {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
 
 
 /* ---------- hero ---------- */

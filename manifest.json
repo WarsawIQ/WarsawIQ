@@ -2,6 +2,8 @@
   "name": "WarsawIQ",
   "short_name": "WarsawIQ",
   "start_url": "/",
+  "lang": "en-GB",
+  "dir": "ltr",
   "display": "browser",
   "background_color": "#0d1218",
   "theme_color": "#0d1218",
