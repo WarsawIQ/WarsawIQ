@@ -1,4 +1,4 @@
-/* WarsawIQ — warsawiq.com
+/* WarsawIQ – warsawiq.com
    Palette shared with karol.chlasta.pl: navy #143a72 on white, lightened to
    #86abe9 on dark. The two sites are deliberately one visual family.
    Type: Barlow, a DIN-lineage grotesque matching the Bahnschrift wordmark in
@@ -203,7 +203,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 /* Visible only to a screen reader. Unlike .skip this never returns on
-   focus — the language names are permanent alternative text. */
+   focus – the language names are permanent alternative text. */
 .sr {
   position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap;
